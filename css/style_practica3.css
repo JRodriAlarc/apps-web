@@ -1,0 +1,29 @@
+*{
+    font-family: 'Yesterday Dream';
+    font-size: x-large;
+    text-align: center;
+}
+
+body{
+    background-color: #fcfff5;
+}
+
+div{
+    background-color: bisque;
+    border-radius: 15px;
+    margin: 5px;
+    width: 200px;
+    height: 200px;
+    line-height: 200px;
+    float: left;
+}
+
+#capa1{
+    background-color: coral;
+}
+
+#capa2{
+    background-image: url(../img/monterrey-light-wall.jpg);
+    aspect-ratio: 1/1;
+    background-size: 200px 200px;
+}

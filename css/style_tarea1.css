@@ -1,0 +1,72 @@
+*{
+    font-family: 'Trebuchet MS';
+    box-sizing: border-box;
+}
+
+.container{
+    width: 98vw;
+    /*height: 98vh;
+    max-width: 1200px;
+    min-width: 320px;*/
+    margin: auto;
+    aspect-ratio: 1/1;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    gap: 7px;
+}
+
+div{
+    background-color: #8686f3;
+    border-radius: 1rem;
+    text-align: center;
+    font-size: medium;
+    color: aliceblue;
+    width: 100%;
+    height: auto;
+}
+
+#Capa1{
+    background-color: blue;
+}
+#Capa3{
+    background-image: url(../img/bigsur-night-wall.jpg);
+    background-size: 100%;
+}
+
+#Capa9{
+    background-image: url(../img/win11-light-wall.jpg);
+    background-size: 140%;
+}
+
+#Capa10{
+    background-color: #11df9a;
+}
+
+#Capa12{
+    background-image: url(../img/win11-dark-wall.jpg);
+    background-size: 140%;
+}
+
+#Capa16{
+    background-image: url(../img/monterrey-night-wall.jpg);
+    background-size: 100%;
+}
+
+#Capa19{
+    background-color: #4370bc;
+}
+
+#Capa22{
+    background-color: #e5a04c;
+}
+
+#Capa27{
+    background-image: url(../img/bigsur-light-wall.jpg);
+    background-size: 100%;
+}
+
+#Capa24{
+    background-image: url(../img/monterrey-light-wall.jpg);
+    background-size: 100%;
+}

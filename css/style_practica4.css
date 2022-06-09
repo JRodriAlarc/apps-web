@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Macondo&family=Roboto:wght@300&display=swap');
+
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+.title{
+    font-family: 'Macondo', cursive;
+    font-size: 40px;
+}
+
+.image-container{
+    width: 70vw;
+    height: auto;
+}
+
+.image{
+    height: 15vw;    
+}
+
+#new-image{
+    transform: scaleX(-1);
+}

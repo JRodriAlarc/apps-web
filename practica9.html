@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Practica9</title>
+    <style type="text/css">
+        .row > div{
+            background-color: #7f88ff;
+            border: 1px solid #351eff;
+            border-radius: 12px;
+            margin-top: 30px;
+            color: white;
+            font-weight: bolder;
+            font-size: x-large;
+            text-align: center;
+            margin-right: 15px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container bg-primary text-center text-white rounded-3"> <!-- bg-success text-white-->
+        <div class="row">
+            <h3 class="d-block d-sm-none">Extra Small (&lt;576px)</h3>
+            <h3 class="d-none d-sm-block d-md-none">Small (&gt;=576px)</h3>
+            <h3 class="d-none d-md-block d-lg-none">Medium (&gt;=768px)</h3>
+            <h3 class="d-none d-lg-block d-xl-none">Large (&gt;=992px)</h3>
+            <h3 class="d-none d-xl-block d-xxl-none">Extra Large (&gt;=1200px)</h3>
+            <h3 class="d-none d-xxl-block">Extra Extra Large (&gt;=1400px)</h3>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-sm-6 col-md-6 col-lg-8 col-xl-3">
+                <p>Col 1</p>
+            </div>
+            <div class="col-12 col-sm-8 col-md-6 col-lg-4 col-xl-2">
+                <p>Col 2</p>
+            </div>
+            <div class="col-12 col-sm-4 col-md-6 col-lg-8 col-xl-12">
+                <p>Col 3</p>
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

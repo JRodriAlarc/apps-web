@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Practica11</title>
+</head>
+<body>
+    <style>
+
+        @media (min-width: 575.98px) { 
+            .container header{
+                background-color: cyan;
+            }
+        }
+
+        @media (min-width: 576px) and (max-width:767.98px) {
+            .container article{
+                background-color: red;
+                height: 150px;
+                line-height: 150px;
+            }
+            .container .color-green{
+                background-color: chartreuse;
+                text-align: center;
+            }
+        }
+
+        @media (min-width: 768px){
+            .container header{
+                background-color: chartreuse;
+            }
+            .container article{
+                background-color: red;
+                height: 250px;
+                line-height: 250px;
+            }
+        }
+
+        .elementos{
+            text-align: center;
+            border-radius: 12px;
+            margin-top: 4px;
+            border: 4px solid white;
+            font-weight: bolder;
+        }
+        header{
+            background-color: orange;
+            padding: 10px;
+        }
+        article{
+            font-size: 60px;
+            background-color: red;
+        }
+        .color-blue{
+            background-color: cyan;
+        }
+        footer{
+            background-color: #ffd900;
+            padding: 7px;
+        }
+        .container h2{
+            margin-top: 60px;
+        }
+    </style>
+    
+    <div class="container">
+        <div class="row">
+            <h2 class="d-block d-sm-none">Tamaño XS</h2>
+            <h2 class="d-none d-sm-block d-md-none">Tamaño SM</h2>
+            <h2 class="d-none d-md-block">Tamaño MD, LG y XL</h2>
+
+            <header class="elementos col-12 text-center col-sm-12 text-sm-start col-md-12 text-md-start"><i>Header</i></header>
+            <section class="col-12 col-offset-12">
+                <div class="row">
+                    <article class="elementos col-12 text-start col-sm-6 col-md-4 text-md-center">1</article>
+                    <article class="elementos color-blue col-12 text-center col-sm-6 text-sm-end col-md-4 text-md-center">2</article>
+                    <article class="elementos color-green col-12 text-end text-sm-center col-md-4 text-md-center">3</article>
+                </div>
+            <div class="col-12 col-offset-12">
+                <div class="row">
+                    <footer class="elementos col-12 col-sm-12 col-md-6 text-md-end"><i>Footer 1</i></footer>
+                    <footer class="elementos col-12 col-sm-12 col-md-6 text-md-start"><i>Footer 2</i></footer>
+                </div>
+            </div>
+            </section>
+        </div>
+    </div>
+
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/bootstrap.min.css" type="text/css">
+    <style>
+        .elem{
+            background-color: aquamarine;
+            border: 1px solid;
+            border-color: green;
+            border-radius: 8px
+        }
+        div{
+            text-align: center;
+        }
+        #ejercicio2{
+            margin-top: 20px;
+        }
+        #ejercicio3{
+            margin-top: 20px;
+        }
+        #ejercicio4{
+            margin-top: 20px;
+        }
+        h1{
+            margin-top: 50px;
+        }
+        /*#vacio{
+            background-color: transparent;
+            color: white;
+            border: none;
+        }*/
+    </style>
+    <title>Practica8</title>
+</head>
+<body>
+
+    <h1 class="container">Usando Bootstrap 5:</h1>
+    
+    <div class="container">
+
+        <div id="ejercicio1">
+            <div class="row">
+                <div class="elem col-1">Elemnto 1</div>
+                <div class="elem col-2">Elemnto 2</div>
+                <div class="elem col-3">Elemnto 3</div>
+                <div class="elem col-6">Elemnto 4</div>
+            </div>
+
+            <div class="row">
+                <div class="elem col-12">Elemnto 1</div>
+            </div>
+
+            <div class="row">
+                <div class="elem col-4">Elemnto 1</div>
+                <div class="elem col-8">Elemnto 2</div>
+            </div>
+        </div>
+
+        <div id="ejercicio2">
+            <div class="row">
+                <div class="elem col-12">
+                    Elemnto 1
+                    <div class="row">
+                        <div class="elem col-3">Elemnto 1</div>
+                        <div class="elem col-6">Elemnto 2</div>
+                        <div class="elem col-3">Elemnto 3</div>
+                    </div>
+                </div>  
+            </div>
+        </div>
+        
+        <div id="ejercicio3">
+            <div class="row">
+                <div class="elem col-3">Elemnto 1</div>
+                <div class="elem col-6">Elemnto 2</div>
+                <div class="elem col-3">Elemnto 3</div>
+            </div>
+            <div class="row">
+                <div class="elem col-3">Elemnto 1</div>
+                <div id="vacio" class="col-6 col-offset-6"></div>
+                <div class="elem col-3">Elemnto 3</div>
+            </div>
+        </div>
+
+        <div id="ejercicio4">
+            <div class="row">
+                <div class="elem col-12">Primer Nivel con 12 Columnas
+                    <div class="row">
+                    
+                        <div class="elem col-8">
+                            Segundo Nivel con 8 Columnas
+                            <div class="row">
+                                <div class="col-4 col-offset-4">
+                                    <div class="row">
+                                        <div class="elem col-12">Tercer nivel con 4 Columnas</div> 
+                                    </div>
+                                </div>
+                                <div class="col-2 col-offset-2"></div>
+                                <div class="elem col-6">Tercer Nivel con 6 Columnas
+                                    <div class="row">
+                                        <div class="col-1 col-offset-1"></div>
+                                        <div class="elem col-3">Cuarto Nivel con 3 columnas</div>
+                                        <div class="col-1 col-offset-1"></div>
+                                        <div class="col-5 col-offset-5">
+                                            <div class="row">
+                                                <div class="elem col-12">Cuarto Nivel con 5 columnas</div>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        
+                        <div class="col-4 col-offset-4">
+                            <div class="row">
+                                <div class="elem col-12">Segundo Nivel con 4 Columnas</div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+                
+            
+        </div>
+
+        <!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, voluptas ea nihil dignissimos consectetur officia iure temporibus laboriosam eum pariatur provident ratione adipisci excepturi, ipsum perspiciatis, magni in quidem libero?</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea perspiciatis facere dicta vel inventore quos numquam quas aperiam rem ab dolores neque voluptatum quam, animi explicabo rerum tenetur eveniet necessitatibus.</p>
+    
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem nobis, veritatis ipsa magnam distinctio reprehenderit voluptas perferendis iusto at natus dolorem nisi facere, illo error animi debitis consequuntur possimus sit!</p>-->
+    </div>
+    
+
+
+    <script src="js/bootstrap.js" type="text/javascript" ></script>
+
+</body>
+</html>

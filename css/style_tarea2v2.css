@@ -13,3 +13,29 @@ header{
 .espaciado{
     height: 50px;
 }
+
+footer{
+    margin-bottom: 20px;
+}
+
+.text-justify{
+    text-align: justify;
+}
+
+@media (min-width: 991.98px) { 
+    .container iframe{
+        height: 400px;
+    }
+}
+
+@media (max-width: 991.98px) { 
+    .container iframe{
+        height: 250px;
+    }
+}
+
+@media (max-width: 991.98px) { 
+    .container .text-future{
+        width: 100%;
+    }
+}

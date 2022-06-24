@@ -5,8 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="shortcut icon" href="img/biography-icon.png">
     <link rel="stylesheet" href="css/style_tarea2v2.css">
-    <title>Tarea 2</title>
+    <title>Tarea 2 Usando Bootstrap</title>
 </head>
 <body>
     
@@ -14,29 +15,59 @@
         <div class="row">
             <div class="col-12 col-offset-12 espaciado"></div>
             <header class="col-12">
-                <nav class="text-center">
-                    <img class="rounded float-start" src="img/biography-icon.png" alt="logo-web-site" style="width: 60px;">
+                <nav class="bg-primary p-4 bg-opacity-25 rounded-3">
+                    <img class="rounded float-end" src="img/biography-icon.png" alt="logo-web-site" style="width: 50px;">
         
-                    <ul class="list-inline text-end ">
-                        <li class="list-inline-item"><a href="#escuela">Estudios</a></li>
-                        <li class="list-inline-item"><a href="#familia">Familia</a></li>
-                        <li class="list-inline-item"><a href="#pasatiempos">Pasatiempos</a></li>
-                        <li class="list-inline-item"><a href="#planes">Planes a Fururo</a></li>
+                    <ul class="breadcrumb text-end">
+                        <li class="breadcrumb-item"><a href="#escuela">Estudios</a></li>
+                        <li class="breadcrumb-item"><a href="#familia">Familia</a></li>
+                        <li class="breadcrumb-item"><a href="#pasatiempos">Pasatiempos</a></li>
+                        <li class="breadcrumb-item"><a href="#planes">Planes a Fururo</a></li>
                     </ul>
     
                 </nav>
                 <br><hr/>
-                <h1 class="mark">Mi Biografia con Bootstrap</h1>
+                <h1 class="mark mb-5">Mi Biografia Usando Bootstrap</h1>
             </header>
 
-            <section class="col-12">
+            <main>
+
+              <section> <!-- Aqui Falta -->
+                <div class="row">
+                  
+                  <div class="col-2 col-lg-1 col-offset-2"></div>
+                  <div class="col-8 col-lg-2">
+                      <img src="img/avatar-man-icon.png" class="img-fluid rounded-circle" alt="avatar">
+                  </div>
+                  <div class="col-2 col-lg-1 col-offset-2 d-block d-lg-none"></div>
+
+                  <div class="col-1 col-offset-1 d-block d-lg-none"></div>
+                  <div class="col-10 col-lg-8">
+                      <p class="text-justify">Jonatan Raúl nació un día 15 de marzo del año 2003, en el municipio de Zacualtipán de Ángeles Hidalgo, un bello lugar rico en cultura, tradición y gastronomía, con un clima frio-templado, que registra una temperatura media anual 14<sup>°</sup>C,<small> ubicado geográficamente entre los paralelos 20<sup>°</sup> 39' de latitud norte y 98<sup>°</sup>  39' de longitud oeste,</small> a una altitud de 1,980 metros sobre el nivel del mar.</p>
+      
+                      <p class="text-justify">Actualmente cursa el tercer cuatrimeste en la Universidad Tecnologica de la Sierra Hidalguense, en la <em>carrera de Desarollo y Gestión de Software.</em> </p>
+                  </div>
+                  
+                  <div class="text-center">
+                    <img src="img/Centro_de_Zacualtipán.jpg" class="rounded img-fluid" max-width="800px" alt="Pasatiempos">
+                  </div>
+                  
+                </div>
+              </section>
+
+              <section class="col-12" id="escuela">
                 <h2>Estudios</h2>
                 <div class="row">
                     <div class="col-2 col-offset-2"></div>
                     <div class="col-8">
+                      <p class="text-justify">Estudio dos años en el prescolar María Rudi Garcia Soliz ubicado en la colonia Lopez Mateos, para posteriormente cursar seis años la primaria Profesor Francisco Cesar Morales ubicada el la colonia Chililiapa, de la cual al graduarse, decidió estudiar tres años más en la escuela secundaria General Teofílo Rivera, ubicada en la misma colonia. <br> Posteriormente continuo sus estudios durante tres años más en el Centro de Bachillerato Tecnologico industrial y de servicios <i>(CBTis)</i> No.5, ubicado a unos metros de la secundaria a la que asistió.</p>
+                      <pre>Actualmente cursa el tercer cuatrimeste en la Universidad Tecnologica de la Sierra Hidalguense, <small>ubicada en el tramo, carretera 
+                        Mexico-Tampico, a la altura del kilimetro 100</small> en el área de Ti, en la carrera de Desarollo y
+                                            Gestión de Software Multiplataforma.</pre>
+                      
                         <table class="table table-primary table-striped table-hover table-bordered">
                             <thead>
-                              <tr>
+                              <tr class="text-center">
                                 <th scope="col">Escolaridad</th>
                                 <th scope="col">Nombre de la Escuala</th>
                               </tr>
@@ -67,23 +98,156 @@
                     </div>
                     <div class="col-2 col-offset-2"></div>
                 </div>
-            </section>
+              </section>
 
+              <section class="col-12" id="familia">  <!-- Aqui Falta -->
+                <h2>Falimlia</h2>
+                <div>
+                    <div>
+                        <p class="text-justify">Su familia se compone por 3 integrantes, su hermana menor quien cursa el quinto grado en la escuela primaria Profesor Farncisco Cesar Morales, y sus padres; quienes son originarios del municipio de Tianguistengo Hidalgo.</p>
+                        <ol>
+                            <li>Papá</li>
+                            <li>Mamá</li>
+                            <li>Hermana</li>
+                        </ol>
+                    </div>
+                </div>
+              </section>
 
-            <figure class="col-12 text-center bg-secondary text-white rounded-3">
-                <blockquote class="blockquote"><br>
-                  <p>“Nuestra recompensa se encuentra en el esfuerzo y no en el resultado. Un esfuerzo total, es una victoria completa"</p>
+              <aside id="pasatiempos">
+                <h2>Pasatiempos</h2>
+                <div class="text">
+                    <div class="text__body">
+                        <p class="text-justify">Uno de sus pasatiempos favoritos es realizar deporte, especialmente le encanta jugar futbol, en la posición de portero o en el centro del campo, donde tiene un buen rendimiento, también le fascina jugar voleibol, e incluso jugar videojuegos especialmente de deportes o carreras de autos como <a href="https://www.ea.com/es-es/games/fifa/fifa-22">“FIFA”</a>  y <a href="https://www.ea.com/es-es/games/need-for-speed">“Need For Speed”</a>.</p>
+                    </div>
+                    <div class="text-center">
+                      <img src="img/mandos-ps4-jugando-fifa.webp" class="rounded img-fluid" alt="Pasatiempos">
+                    </div>
+                </div>
+              </aside>
+
+              <article>
+                <div class="row">
+
+                  <div class="col-1 col-lg-2 col-offset-2"></div>
+                  <p class="text-justify col-10 col-lg-8 mt-3">Una de sus actividades preferidas es escuchar Musica, sus cantantes favoritos son Evan Craft, Redimi2, Funky, Grupo Respaldo, Ander Bock, Onell Díaz, Indiomar, La Cuarta Tribu, Danny Gokey, Lauren Diagle, Unspoken, Jordan Feliz y Hillsong. Sus canciones favoritas son: </p>
+                  <div class="col-1 col-lg-2 col-offset-2"></div>
+
+                  <div class="row">
+                    <audio class="col-12 col-lg-4" src="music/JordanFeliz-EvanCraft-Faith.mp3" controls>Faith</audio>
+                    <h4 class="text-center col-12 d-lg-none">Faith</h4>
+                    <audio class="col-12 col-lg-4" src="music/Farruko-Incompleto.mp3" controls>Incompleto</audio>
+                    <h4 class="text-center col-12 d-lg-none">Incompleto</h4>
+                    <audio class="col-12 col-lg-4" src="music/GrupoRespaldo-EstamosEnLive.mp3" controls>Estamos En Live</audio>
+                    <h4 class="text-center col-12 d-lg-none">Estamos En Live</h4>
+                    
+                    <div class="row text-center mb-3">
+                      <h4 class="d-none d-lg-block col-lg-4">Faith</h4>
+                      <h4 class="d-none d-lg-block col-lg-4">Incompleto</h4>
+                      <h4 class="d-none d-lg-block col-lg-4">Estamos En Live</h4>
+                    </div>
+                    
+                    <audio class="col-12 col-lg-4" src="music/YouSay-LaurenDiagle.mp3" controls></audio>
+                    <h4 class="text-center col-12 d-lg-none">You Say</h4>
+                    <audio class="col-12 col-lg-4" src="music/Redimi2-UhambeNami.mp3" controls></audio>
+                    <h4 class="text-center col-12 d-lg-none">Uhambe Nami</h4>
+                    <audio class="col-12 col-lg-4" src="music/Unspoken-Reason.mp3" controls></audio>
+                    <h4 class="text-center col-12 d-lg-none">Reason</h4>
+                    
+                    <div class="row text-center mb-3">
+                      <h4 class="d-none d-lg-block col-lg-4">You Say</h4>
+                      <h4 class="d-none d-lg-block col-lg-4">Uhambe Nami</h4>
+                      <h4 class="d-none d-lg-block col-lg-4">Reason</h4>
+                    </div>
+
+                  </div>
+                  
+                </div>
+              </article>
+
+              <article >
+                <p class="text-justify">Él suele salir de paseo con su familia y visitar lugares muy bellos del municipio de Hidalgo, por lo general suelen acudir a parques acuaticos, pueblos magicos, haciendas y parques dentro del estado de Hidalgo, algunos de los siguientes son los que han visitado.</p>
+                <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  </div>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="img/prismas-basalticos.jpeg" class="d-block w-100" alt="Parque Acuatico los Prismas Basalticos">
+                      <div class="carousel-caption d-none d-md-block">
+                        <h5>Los Prismas Basálticos</h5>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <img src="img/grutas-de-tolantongo.jpg" class="d-block w-100" alt="Parque Acuatico las gutas de Tolantongo">
+                      <div class="carousel-caption d-none d-md-block">
+                        <h5>Las Gutas de Tolantongo</h5>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <img src="img/bosque-de-las-truchas.jpg" class="d-block w-100" alt="Bosque de las Truchas">
+                      <div class="carousel-caption d-none d-md-block">
+                        <h5>Bosque de las Truchas</h5>
+                      </div>
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                  </button>
+                </div>
+              </article>
+
+              <article class="col-lg-12 mb-4">
+                <div class="row">
+                  <p class="text-justify">También disfruta de ver videos de deportes, en especial recopilaciones de jugadas, pases, estrategias, atajadas y salvadas de porteros o defensas, que estan comprometidos con su equipo y lo dan todo en el terreno de juego.</p>
+                  <iframe src="https://www.youtube.com/embed/s6E3_SLgyP4" class="col-12 col-lg-6 mb-2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  <iframe src="https://www.youtube.com/embed/gnzxi0NoiX4" class="col-12 col-lg-6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+              </article>
+
+              <section id="planes">
+                <h2>Planes a Futuro</h2>
+                <div class="texto">
+                    <div class="row">
+                      <div class="col-8 col-offset-8 text-future">
+
+                        <p class="text-justify col-12 col-lg-12">Jonatan planea hacer sus estadías en sexto semestre en una empresa dedicada a la creación de páginas web y aplicaciones móviles, para que pueda titularse como TSU en el área de desarrollo y gestión de software; con el fin de adquirir conocimientos y experiencia en el campo laboral, para posteriormente cursar la ingeniería y conseguir un trabajo remoto (home office) de medio tiempo como becario en una compañía que desarrolle software para que gane experiencia y obtenga un apoyo económico que le ayude a concluir sus estudios y <strong>alcanzar su meta de convertirse en creador y diseñador de páginas web full stack.</strong></p>
+
+                        <p class="text-justify col-12 col-lg-12">A largo plazo espera tener un empleo estable y bien remunerado, encontrar a la pareja perfecta, que lo ame, valore y estime, con quien pueda casarse y formar una familia, una casa, un auto y pueda ser feliz con su vida y con sigo mismo.</p>
+                        
+                        <p class="text-justify col-12 col-lg-12">Dentro de la empresa demostrará su potencial y habilidades adquiridas, siempre buscará el lado positivo de las cosas y dará su mayor esfuerzo y desempeño. </p>
+                      
+                      </div>
+                        
+                        <img src="img/programador-ingenieria.jpg" class="d-none d-lg-block col-lg-4 rounded img-fluid mb-4" alt="Pasatiempos">
+
+                    </div>
+                </div>
+              </section>
+
+            </main>
+            
+            <div class="col-1 col-offset-1 d-block d-lg-none"></div>
+            <figure class="col-10 col-lg-12 text-center bg-secondary text-white rounded-3">
+                <blockquote class="blockquote fs-6"><br>
+                  <h6 class="mb-4">“Nuestra recompensa se encuentra en el esfuerzo y no en el resultado. Un esfuerzo total, es una victoria completa"</h6>
                 </blockquote>
                 <figcaption class="blockquote-footer text-white">
                     <strong><i>Mahatma Gandhi en </i></strong><cite title="Título fuente">Mundifrases.com</cite>
                 </figcaption>
             </figure>
+            <div class="col-1 col-offset-1 d-block d-lg-none"></div>
             <br/><hr/><br/>
 
-
-            
-            <footer class="col-12 text-center">
-                <p>© copyright 10 de Junio de 2022</p>
+            <footer class="col-12">
+                <p class="text-center bg-primary p-4 bg-opacity-25 rounded-3">© copyright 10 de Junio de 2022</p>
             </footer>
 
         </div>

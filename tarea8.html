@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/forms-icon.png">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Tarea 8</title>
+    <style>
+        .form-center{
+            margin: 0;
+            padding: 0;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .form-style{
+            background-color: #f6f6f6;
+            border: 1px solid;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="form-center">
+        <div class="container">
+            <div class="row form-style">
+                <form class="col-12" action="" method="get">
+                    <div class="row px-4 mt-4 mb-4">
+                        <div class="col-12 col-lg-6 mb-3">
+                            <label class="form-label" for="campo-nombre">First Name</label>
+                            <input type="text" class="form-control" name="campo-nombre" id="campo-nombre" placeholder="">
+                        </div>
+                        <div class="col-12 col-lg-6 mb-3">
+                            <label class="form-label" for="campo-apellido">Last Name</label>
+                            <input type="text" class="form-control" name="campo-apellido" id="campo-apellido" placeholder="">
+                        </div>
+                        <div class="col-12 col-lg-12 mb-3">
+                            <label class="form-label" for="campo-direccion">Address</label>
+                            <input type="text" class="form-control" name="campo-direccion" id="campo-direccion" placeholder="">
+                        </div>
+                        <div class="col-12 col-lg-6 mb-3">
+                            <label class="form-label" for="campo-ciudad">City</label>
+                            <input type="text" class="form-control" name="campo-ciudad" id="campo-ciudad" placeholder="">
+                        </div>
+                        <div class="col-8 col-lg-4 mb-3">
+                            <label class="form-label" for="campo-estado">State</label>
+                            <select class="form-select" name="campo-estado" id="campo-estado" aria-label="Default select example">
+                                <option selected>Punjab</option>
+                                <option value="State 1">State 1</option>
+                                <option value="State 2">State 2</option>
+                                <option value="State 3">State 3</option>
+                            </select>
+                        </div>
+                        <div class="col-4 col-lg-2 mb-3">
+                            <label class="form-label" for="campo-codpost">Zip</label>
+                            <input type="number" class="form-control" name="campo-codpost" id="campo-codpost" placeholder="">
+                        </div>
+                        <div class="col-8 col-lg-6 mb-3">
+                            <label class="form-label" for="campo-archivo">Upload Domicile</label>
+                            <input class="form-control" type="file" name="campo-archivo" id="campo-archivo">
+                        </div>
+                        <div class="col-4 col-lg-6 mb-3">
+                            <label class="form-label mb-3" for="form-check">Gender</label>
+                            <div class="row px-4" name="form-check" id="form-check">
+                                <div class="form-check col-lg-3">
+                                    <input class="form-check-input" type="radio" value="Male" name="campo-genero" id="campo-genero1" checked>
+                                    <label class="form-check-label" for="campo-genero1">Male</label>
+                                </div>
+                                <div class="form-check col-lg-3">
+                                    <input class="form-check-input" type="radio" value="Female" name="campo-genero" id="campo-genero2">
+                                    <label class="form-check-label" for="campo-genero2">Female</label>
+                                </div>
+                                <div class="form-check col-lg-3">
+                                    <input class="form-check-input" type="radio" value="Other" name="campo-genero" id="campo-genero3">
+                                    <label class="form-check-label" for="campo-genero3">Other</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-grid gap-2 mt-2">
+                            <button class="btn btn-primary" type="button">Submit</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script_tarea8.js"></script>
+    
+</body>
+</html>

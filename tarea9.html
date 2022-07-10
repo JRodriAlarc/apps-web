@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/forms-icon.png">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Tarea 9</title>
+    <style>
+        .formulario{
+            margin: 0;
+            padding: 0;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .apearence-style{
+            background-color: #f6f6f6;
+            border: 1px solid;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="formulario">
+        <div class="container">
+            <form class="apearence-style" action="" method="get">
+                <header class="input-group-text mb-4 px-4">Datos del Instructor</header>
+                <div class="col-12 mb-4 row row mx-auto">
+                    
+                    <div class="col-12 col-md-6 row mx-auto">
+                        <div class="input-group mt-3 mb-3">
+                            <label for="campo-run" class="col-2 col-md-2 col-xl-1 col-form-label fw-bold text-end text-wrap">RUN</label>
+                            <div class="col-10 col-md-10 col-xl-11 px-4">
+                                <input type="text" class="form-control" name="campo-run" id="campo-run">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 row mx-auto">
+                        <div class="input-group mt-3 mb-3">
+                            <label for="campo-nombre" class="col-2 col-md-2 col-xl-1 col-form-label fw-bold text-end text-wrap">Nombre</label>
+                            <div class="col-10 col-md-10 col-xl-11 px-4">
+                                <input type="text" class="form-control" name="campo-nombre" id="campo-nombre">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 row mx-auto">
+                        <div class="input-group mt-3 mb-3">
+                            <label for="campo-fecha" class="col-2 col-md-2 col-xl-1 col-form-label fw-bold text-end text-wrap">Fecha</label>
+                            <div class="col-10 col-md-10 col-xl-11 row">
+                                <div class="input-group date px-4" id="datepicker">
+                                    <div class="input-group">
+                                        <span class="input-group-text" id="calendario">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar-event" viewBox="0 0 16 16">
+                                                <path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z"/>
+                                                <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
+                                            </svg>
+                                        </span>
+                                    <input type="date" class="form-control" name="campo-fecha" id="campo-fecha">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 row mx-auto">
+                        <div class="input-group mt-3 mb-3">
+                            <label for="campo-email" class="col-2 col-md-2 col-xl-1 col-form-label fw-bold text-end text-wrap">Email</label>
+                            <div class="col-10 col-md-10 col-xl-11 row">
+                                <div class="input-group date px-4">
+                                    <div class="input-group">
+                                        <span class="input-group-text" id="email">@</span>
+                                    <input type="email" class="form-control" name="campo-email" id="campo-email">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-12 col-md-6 row mx-auto">
+                        <div class="input-group mt-3 mb-3">
+                            <label for="campo-tel" class="col-2 col-md-2 col-xl-1 col-form-label fw-bold text-end text-wrap">Teléfono</label>
+                            <div class="col-10 col-md-10 col-xl-11 row">
+                                <div class="input-group date px-4">
+                                    <div class="input-group">
+                                        <span class="input-group-text" id="numero">12</span>
+                                    <input type="number" class="form-control" name="campo-tel" id="campo-tel">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 row mx-auto">
+                        <div class="input-group mt-3 mb-3">
+                            <label for="campo-direccion" class="col-2 col-md-2 col-xl-1 col-form-label fw-bold text-end text-wrap">Dirección</label>
+                            <div class="col-10 col-md-10 col-xl-11 px-4">
+                                <input type="text" class="form-control" name="campo-direccion" id="campo-direccion">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 row mx-auto">
+                        <div class="input-group mt-3 mb-3">
+                            <label for="campo-ciudad" class="col-2 col-md-2 col-xl-1 col-form-label fw-bold text-end text-wrap">Ciudad</label>
+                            <div class="col-10 col-md-9 col-xl-10 px-4">
+                                <select class="form-select" aria-label="Default select example" name="campo-ciudad" id="campo-ciudad">
+                                    <option selected>Seleccione una opción ...</option>
+                                    <option value="Zacualtipán">Zacualtipán</option>
+                                    <option value="Pachuca">Pachuca</option>
+                                    <option value="Huejutla">Huejutla</option>
+                                </select>
+                            </div>
+                            <div class="d-block d-md-block col-md-1 col-offset-1"></div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 row mx-auto">
+                        <div class="input-group mt-3 mb-3">
+                            <label for="campo-comuna" class="col-2 col-md-2 col-xl-1 col-form-label fw-bold text-end text-wrap">Comuna</label>
+                            <div class="col-10 col-md-9 col-xl-10 px-4">
+                                <select class="form-select" aria-label="Default select example" name="campo-comuna" id="campo-comuna">
+                                    <option selected>Seleccione una opción ...</option>
+                                    <option value="López Mateos">López Mateos</option>
+                                    <option value="Centro">Centro</option>
+                                    <option value="Chililiapa">Chililiapa</option>
+                                </select>
+                            </div>
+                            <div class="d-block d-md-block col-md-1 col-offset-1"></div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-12 row mx-auto">
+                        <div class="input-group mt-3 mb-3">
+                            <label for="campo-auto" class="col-2 col-md-1 col-xl-1 col-form-label fw-bold text-end text-wrap">Auto</label>
+                            <div class="col-10 col-md-11 col-xl-11 px-4">
+                                <select class="form-select" aria-label="Default select example" name="campo-auto" id="campo-auto">
+                                    <option selected>XXXX-15</option>
+                                    <option value="4154-15">4154-15</option>
+                                    <option value="3658-15">3658-15</option>
+                                    <option value="7864-15">7864-15</option>
+                                </select>
+                            </div>
+                            <div class="d-block d-md-block col-md-1 col-offset-1"></div>
+                        </div>
+                    </div>
+
+                    <!--<div class="input-group mt-3 mb-3">
+                        <label for="campo-run" class="col-2 col-md-1 col-xl-1 col-form-label fw-bold text-end text-wrap">Fecha</label>
+                        <div class="col-10 col-md-5 col-xl-5 row">
+                            <div class="input-group date px-4" id="datepicker">
+                                <span class="input-group-append">
+                                    <span class="input-group-text">
+                                        <i class="fa fa-calendar fw-bolder"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar-event" viewBox="0 0 16 16">
+                                            <path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z"/>
+                                            <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
+                                          </svg></i>
+                                    </span>
+                                </span>
+                                <input type="date" class="form-control">
+                            </div>
+                        </div>
+                    </div>-->
+
+                    <!--<div class="input-group mt-3 mb-3">
+                        <label for="campo-fecha" class="col-4 col-md-2 col-xl-1 col-form-label fw-bold text-end px-4 text-wrap">Fecha Nacimiento</label>
+                        <div class="input-group col-8 col-md-4 col-xl-5">
+                            <span class="input-group-text" id="basic-addon1">@</span>
+                            <div class="col-8 col-md-4 col-xl-5">
+                                <input type="text" class="form-control" placeholder="Nombre de usuario" aria-label="Nombre de usuario" aria-describedby="basic-addon1">
+                            </div>
+                        </div>
+                    </div>-->
+
+                    <!--<div class="input-group mt-3 mb-3">
+                        <label for="campo-fecha" class="col-4 col-md-2 col-xl-1 col-form-label fw-bold text-end px-4 text-wrap">Fecha Nacimiento</label>
+                        <div class="input-group">
+                            <span class="input-group-text" id="basic-addon1"><i class="bi bi-calendar4-event">i</i></span>
+                            <div class="col-8 col-md-4 col-xl-5">
+                                <input type="date" class="form-control" name="campo-fecha" id="campo-fecha">
+                            </div>
+                        </div>
+                    </div>-->
+                </div>
+            </form>
+            
+            <br><hr>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                <button class="btn btn-primary me-md-2" type="button">Añadir</button>
+                <button class="btn btn-outline-secondary" type="reset">Cancelar</button>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script_tarea9.js"></script>
+
+</body>
+</html>
